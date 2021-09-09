@@ -15,11 +15,11 @@ const OPTIONS = {
     5: SPOCK
 };
 const OPTIONS2EMOJI = {
-    1: 'ROCK',
-    2: 'PAPER',
-    3: 'SCISSORS',
-    4: 'LIZARD',
-    5: 'SPOCK'
+    1: '✊',
+    2: '✋',
+    3: '✂️',
+    4: '🦎',
+    5: '🖖'
 };
 
 let userChoiceID = '';
@@ -52,7 +52,7 @@ window.onload = () => {
              case `${LIZARD}-${LIZARD}`:
              case `${SPOCK}-${SPOCK}`:
 
-                 result = "TIE"
+                 result = "TIE.👻"
                  break;
 
             case `${ROCK}-${SCISSORS}`:
@@ -66,7 +66,7 @@ window.onload = () => {
             case `${SPOCK}-${ROCK}`:
             case `${SPOCK}-${SCISSORS}`:
 
-                result = 'Computer Win'
+                result = 'Computer Win.💔'
                 break;
 
             case `${ROCK}-${PAPER}`:
@@ -80,7 +80,7 @@ window.onload = () => {
             case `${SPOCK}-${PAPER}`:
             case `${SPOCK}-${LIZARD}`:
 
-                result = 'You Win'
+                result = 'You Win.✌.⭐'
                 break;
 
             default:
