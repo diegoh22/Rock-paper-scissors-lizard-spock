@@ -7,19 +7,19 @@ const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
 const LIZARD = 'LIZARD';
 const SPOCK = 'SPOCK';
-const options = {
+const OPTIONS = {
     1: ROCK,
     2: PAPER,
     3: SCISSORS,
     4: LIZARD,
-    5: SPOCK,
+    5: SPOCK
 };
-const option2logo = {
-    1: 'rock',
-    2: 'paper',
-    3: 'scissors',
-    4: 'lizard',
-    5: 'spock',
+const OPTIONS2EMOJI = {
+    1: 'ROCK',
+    2: 'PAPER',
+    3: 'SCISSORS',
+    4: 'LIZARD',
+    5: 'SPOCK'
 };
 
 let userChoiceID = '';
@@ -36,16 +36,16 @@ window.onload = () => {
     const playButton = document.querySelector('#play');
 
     playButton.addEventListener('clik',() => {
-        const ComputerChoiceID = getComputerChoice();
-        const ComputerChoice =  options[ComputerChoiceID];
+        const computerChoiceID = getComputerChoice();
+        const computerChoice =  OPTIONS[computerChoiceID];
         const computerChoiceElement = document.querySelector('#computer-choice');
-        const userChoice = options(userChoiceID);
+        const userChoice = OPTIONS[userChoiceID];
 
         let result ='';
         
-        computerChoiceElement.innerHTML = option2logo [ComputerChoiceID];
+        computerChoiceElement.innerHTML = OPTIONS2EMOJI[computerChoiceID];
 
-        switch (`${ComputerChoice}-${userChoice}`) {
+        switch (`${computerChoice}-${userChoice}`) {
              case `${ROCK}-${ROCK}`:
              case `${PAPER}-${PAPER}`:
              case `${SCISSORS}-${SCISSORS}`:
@@ -82,11 +82,12 @@ window.onload = () => {
 
                 result = 'You Win'
                 break;
-                
+
             default:
             result = 'Someting Wrong. try again'
 
         }
+
         output.innerHTML = result;
 
     });
