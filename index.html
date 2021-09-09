@@ -8,9 +8,29 @@
     <title>Game</title>
 </head>
 <body>
-    <span>
-        My choice
+    <div class="container">
+    <header>
+    <h1>
+        <spa>Rock</spa>
+        <spa>Paper</spa>
+        <spa>Scissors</spa>
+        <spa>Lizard</spa>
+        <spa>Spock</spa>
+    </h1>
+    <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+    </div>
+
+</header>
+</div>
+<div class="content">
+<span>
+        You choice
     </span>
+</div>
+<section class="game">
+    
     <div>
         <input type="radio" id="1" name="option" class="user-option">
         <label for="1">✊</label>
@@ -31,15 +51,23 @@
         <input type="radio" id="5" name="option" class="user-option">
         <label for="5">🖖</label>
     </div>
-    </div>
+   </section>
+   <div class="content"> 
     <span>Computer choice</span>
 
     <div id="computer-choice">😈</div>
 
-    <button id="play">play</button>
+    <button id="play">Play</button>
 
     <div id="output"></div>
+   </div>
 
+
+ <section>
+     <button class="rules"><img
+    src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png"
+    alt="Rock, Paper, Scissors, Lizard, Spock" />Rules</button>
+</section>
     <script src="assets/js/scripts.js"></script>
     
 </body>
