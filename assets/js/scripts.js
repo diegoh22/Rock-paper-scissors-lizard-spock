@@ -1,13 +1,13 @@
 function getComputerChoice() {
     return Math.floor((Math.random() * 5) + 1);
 }
-function _Updatescore() {
+function _Updatescore(value) {
     score += value;
    scoreEl.innerText = score;
 
    console.log(value)
 }
-let score = [];
+let score = 0;
 
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
@@ -77,7 +77,7 @@ window.onload = () => {
             case `${LIZARD}-${SPOCK}`:
                 result = 'COMPUTER WIN 😔💔 🤖🥇'
 
-                _Updatescore(1);
+                _Updatescore(-1);
 
                 break;
             case `${ROCK}-${PAPER}`:
