@@ -1,6 +1,13 @@
 function getComputerChoice() {
     return Math.floor((Math.random() * 5) + 1);
 }
+function _Updatescore() {
+    score += value;
+   scoreEl.innerText = score;
+
+   console.log(value)
+}
+let score = [];
 
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
@@ -22,6 +29,8 @@ const OPTIONS2EMOJI = {
     5: '🖖'
 };
 
+const scoreEl = document.getElementById('score');
+
 let userChoiceID = '';
 
 window.onload = () => {
@@ -39,6 +48,8 @@ window.onload = () => {
         const computerChoiceElement = document.querySelector('#computer-choice');
         const output = document.querySelector('#output');
         const userChoice = OPTIONS[userChoiceID];
+        
+
 
         let result = '';
 
@@ -51,6 +62,8 @@ window.onload = () => {
             case `${SPOCK}-${SPOCK}`:
             case `${LIZARD}-${LIZARD}`:
                 result = 'TIE 👻'
+
+                _Updatescore(0);
                 break;
             case `${ROCK}-${SCISSORS}`:
             case `${ROCK}-${LIZARD}`:
@@ -63,6 +76,9 @@ window.onload = () => {
             case `${LIZARD}-${PAPER}`:
             case `${LIZARD}-${SPOCK}`:
                 result = 'COMPUTER WIN 😔💔 🤖🥇'
+
+                _Updatescore(1);
+
                 break;
             case `${ROCK}-${PAPER}`:
             case `${ROCK}-${SPOCK}`:
@@ -74,11 +90,18 @@ window.onload = () => {
             case `${SPOCK}-${LIZARD}`:
             case `${LIZARD}-${ROCK}`:
             case `${LIZARD}-${SCISSORS}`:
+                
                 result = 'YOU WIN 😁🥇 🤖💔'
+
+                _Updatescore(1);
+
                 break;
             default:
                 result = 'SOMETHING WRONG. TRY AGAIN. 💀'
+                
+                
         }
+        
 
         output.innerHTML = result;
     })
