@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 body{
@@ -12,24 +12,23 @@ body{
     padding: 30px 30px;
     margin: 50px 0;
 
-
 }
 
 .container {
     background-color: #1c1c1c85;
-    width: 500px;
+    width: 440px;
     max-width: 100%;
     margin: 0 auto;
     border: 3px solid #1c1c1c;
     border-radius: 25px;
+    
 
 
 
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+
     padding: 20px;
     color: aliceblue;
 
@@ -37,9 +36,7 @@ header {
 }
 
 h1 {
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
+    font-size: 1.1rem;
     margin: 0;
     text-transform: uppercase;
 }
@@ -57,10 +54,16 @@ h4 {
     margin: 0;
     font-size: 1.3rem;
     border-radius: 10px;
-    padding: 20px 10px;
-    margin: 30px 0;
+    padding: 10px 10px;
+    margin: 10px 0;
     text-align: center;
 
+}
+#score {
+    font-size: 2rem;
+    color: black;
+    margin: 5px;
+    padding: 5px;
 }
 
 
@@ -83,7 +86,7 @@ h4 {
  
 .span {
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     
 }
 
