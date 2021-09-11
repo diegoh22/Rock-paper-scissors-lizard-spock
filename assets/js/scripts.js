@@ -16,6 +16,20 @@ function _CupdateScore(value) {
     cscoreEl.innerText = cscore;
 }
 
+  
+  function checkScores() {
+    const cscore = document.getElementById('cscore').innerText;
+    const score = document.getElementById('score').innerText;
+    if (cscore == 5 || score == 5) {
+       
+
+        showGameOverModal()
+        
+    }
+    console.log(cscore);
+    console.log(score);
+}
+
 
 
 let score = 0;
@@ -44,7 +58,7 @@ const OPTIONS2EMOJI = {
 
 const scoreEl = document.getElementById('score');
 const cscoreEl = document.getElementById('cscore')
-const startEl = document.getElementById('start')
+
 
 let userChoiceID = '';
 
@@ -65,11 +79,13 @@ window.onload = () => {
         const computerChoiceElement = document.querySelector('#computer-choice');
         const output = document.querySelector('#output');
         const userChoice = OPTIONS[userChoiceID];
+        
 
 
 
 
         let result = '';
+        
 
         computerChoiceElement.innerHTML = OPTIONS2EMOJI[computerChoiceID];
 
@@ -96,6 +112,8 @@ window.onload = () => {
                 result = '😔💔 🤖🥇'
 
                 _CupdateScore(+1);
+                checkScores(cscore)
+               
 
                 break;
             case `${ROCK}-${PAPER}`:
@@ -112,6 +130,8 @@ window.onload = () => {
                 result = ' 😁🥇 🤖💔'
 
                 _Updatescore(+1)
+                checkScores(score)
+                
 
                 break;
 
@@ -123,6 +143,7 @@ window.onload = () => {
         }
 
         output.innerHTML = result;
+        
     })
 
 
