@@ -12,8 +12,8 @@ body {
     ;
     font-family: "Fjalla-one", sans-serif;
     min-height: 100vh;
-    padding: 30px 30px;
-    margin: 50px 0;
+    padding: 10px 90px;
+    margin: 20px 0;
 
 }
 
@@ -119,46 +119,24 @@ h4 {
     background-color: aliceblue;
 }
 
-
-.rules {
-    font-size: 1.2rem;
-    background-color: #1c1c1cf3;
-    font-family: "Lobster", sans-serif;
-    text-transform: uppercase;
-    margin: 0 auto;
-    border: 2px solid #1c1c1c;
-    border-radius: 10px;
-    color: white;
-    padding: 10px 25px;
-    letter-spacing: 3px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-}
 img{
-    display:none ;
+    display:flex ;
     background-color: aquamarine;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 270px;
-    left: 478px;
-    width: 36vw;
-    height: 36vw;
-
+    border: 1px solid #1c1c1c;
     
 
 }
-.rules button{
-   text-align: center;
-    justify-content: center;
-}
-
-
-.rules:hover {
-    background-color: #3f691d;
+.rules {
+    color: #3f691d;
+    background-color: #1c1c1c;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.3rem;
+    
 }
 
 .start {
@@ -177,7 +155,7 @@ img{
 #endgame {
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: none;
     position: relative;
     height: 100px
    
