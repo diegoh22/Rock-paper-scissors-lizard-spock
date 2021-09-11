@@ -15,11 +15,8 @@ function _CupdateScore(value) {
     cscore += value;
     cscoreEl.innerText = cscore;
 }
-function endGame(value) {
-    start += value;
-    startEl.innerText = start;
 
-}
+
 
 let score = 0;
 let cscore = 0;
@@ -68,6 +65,7 @@ window.onload = () => {
         const computerChoiceElement = document.querySelector('#computer-choice');
         const output = document.querySelector('#output');
         const userChoice = OPTIONS[userChoiceID];
+
 
 
 
@@ -120,10 +118,9 @@ window.onload = () => {
 
             default:
                 result = 'SOMETHING WRONG. TRY AGAIN. 💀'
-    
+
 
         }
-
 
         output.innerHTML = result;
     })
