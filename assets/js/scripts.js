@@ -3,11 +3,20 @@ function getComputerChoice() {
 }
 function _Updatescore(value) {
     score += value;
+    
    scoreEl.innerText = score;
+   
 
-   console.log(value)
+
 }
+function _CupdateScore(value) {
+    cscore += value;
+    cscoreEl.innerText = cscore;
+}
+
 let score = 0;
+let cscore = 0;
+
 
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
@@ -30,6 +39,7 @@ const OPTIONS2EMOJI = {
 };
 
 const scoreEl = document.getElementById('score');
+const cscoreEl = document.getElementById('cscore')
 
 let userChoiceID = '';
 
@@ -39,6 +49,8 @@ window.onload = () => {
     userOptions.forEach(el => el.addEventListener('click', event => {
         userChoiceID = event.target.id;
     }));
+
+    
 
     const playButton = document.querySelector('#play');
 
@@ -61,7 +73,7 @@ window.onload = () => {
             case `${PAPER}-${PAPER}`:
             case `${SPOCK}-${SPOCK}`:
             case `${LIZARD}-${LIZARD}`:
-                result = 'TIE 👻'
+                result = 'IS A DRAW TRY AGAIN👻'
 
                 _Updatescore(0);
                 break;
@@ -75,9 +87,9 @@ window.onload = () => {
             case `${SPOCK}-${SCISSORS}`:
             case `${LIZARD}-${PAPER}`:
             case `${LIZARD}-${SPOCK}`:
-                result = 'COMPUTER WIN 😔💔 🤖🥇'
+                result = '😔💔 🤖🥇'
 
-                _Updatescore(-1);
+                _CupdateScore(+ 1);
 
                 break;
             case `${ROCK}-${PAPER}`:
@@ -91,9 +103,9 @@ window.onload = () => {
             case `${LIZARD}-${ROCK}`:
             case `${LIZARD}-${SCISSORS}`:
                 
-                result = 'YOU WIN 😁🥇 🤖💔'
+                result = ' 😁🥇 🤖💔'
 
-                _Updatescore(1);
+                _Updatescore(+ 1)
 
                 break;
             default:
@@ -105,4 +117,7 @@ window.onload = () => {
 
         output.innerHTML = result;
     })
+
+  
+
 }

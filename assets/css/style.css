@@ -2,8 +2,11 @@
 
 * {
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
-body{
+
+body {
     background: radial-gradient(ellipse at top, #1c1c1c, transparent),
         radial-gradient(ellipse at bottom, #3f691d, transparent);
     ;
@@ -21,7 +24,7 @@ body{
     margin: 0 auto;
     border: 3px solid #1c1c1c;
     border-radius: 25px;
-    
+
 
 
 
@@ -57,45 +60,61 @@ h4 {
     padding: 10px 10px;
     margin: 10px 0;
     text-align: center;
+    column-count: 2;
 
 }
+
 #score {
     font-size: 2rem;
     color: black;
     margin: 5px;
     padding: 5px;
+    background-color: rgb(49, 146, 236);
+}
+
+#cscore {
+
+    font-size: 2rem;
+    color: rgb(7, 7, 7);
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(180, 63, 27, 0.973);
+
 }
 
 
 
 
-.game{
+.game {
     font-size: 3rem;
     text-align: center;
     column-count: 5;
     column-gap: 0px;
     padding: 20px 0 20px;
-    
+
 }
-.content{
+
+.content {
     text-align: center;
     font-size: 2rem;
-    padding:20px 0 20px;
+    padding: 20px 0 20px;
     color: aliceblue;
+    text-transform: uppercase;
 }
- 
+
 .span {
     text-align: center;
     font-size: 1.5rem;
-    
+
 }
 
-#play{
+#play {
     font-size: 2rem;
-    margin: 10px 0 10px;
+    margin: 20px 0 10px;
     color: #3f691d;
     background-color: black;
 }
+
 #play:hover {
     background-color: aliceblue;
 }
@@ -117,6 +136,26 @@ h4 {
     right: 30px;
     cursor: pointer;
 }
+img{
+    display:flex ;
+    background-color: aquamarine;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 270px;
+    left: 478px;
+    width: 36vw;
+    height: 36vw;
+
+    
+
+}
+.rules button{
+   text-align: center;
+    justify-content: center;
+}
+
 
 .rules:hover {
     background-color: #3f691d;

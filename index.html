@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    
-    <title>Game</title>
+
+
+    <title>Rock-Paper-Scissors-Lizard-Spock</title>
 </head>
+
 <body>
     <div class="container">
-    <header>
-    <h1>
-        <spa>Rock-</spa>
-        <spa>Paper-</spa>
-        <spa>Scissors-</spa>
-        <spa>Lizard-</spa>
-        <spa>Spock</spa>
-    </h1>
-    <div class="score-container">
-        <h4>Score</h4>
-        <p id="score">0</p>
-    </div>
+        <header>
+            <h1>
+                <spa>Rock-</spa>
+                <spa>Paper-</spa>
+                <spa>Scissors-</spa>
+                <spa>Lizard-</spa>
+                <spa>Spock</spa>
+            </h1>
+            <div class="score-container">
+                <h4>User</h4>
+                <p id="score">0</p>
+                <h4>Computer</h4>
+                <p id="cscore">0</p>
+            </div>
 
-</header>
-</div>
-<div class="content">
-<span>
-        You choice
-    </span>
-</div>
-<section class="game">
-    
-    <div>
-        <input type="radio" id="1" name="option" class="user-option">
-        <label for="1">✊</label>
+        </header>
+    </div>
+    <div class="content">
+        <span>
+            You choice
+        </span>
+    </div>
+    <section class="game">
+
+        <div>
+            <input type="radio" id="1" name="option" class="user-option">
+            <label for="1">✊</label>
         </div>
         <div>
-        <input type="radio" id="2" name="option" class="user-option">
-        <label for="2">✋</label>
+            <input type="radio" id="2" name="option" class="user-option">
+            <label for="2">✋</label>
+        </div>
+        <div>
+            <input type="radio" id="3" name="option" class="user-option">
+            <label for="3">✂️</label>
+        </div>
+        <div>
+            <input type="radio" id="4" name="option" class="user-option">
+            <label for="4">🦎</label>
+        </div>
+        <div>
+            <input type="radio" id="5" name="option" class="user-option">
+            <label for="5">🖖</label>
+        </div>
+    </section>
+    <div class="content">
+        <span>Computer choice</span>
+
+        <div id="computer-choice">😈</div>
+
+        <button id="play">Play</button>
+
+        <div id="output"></div>
     </div>
-    <div>
-        <input type="radio" id="3" name="option" class="user-option">
-        <label for="3">✂️</label>
-    </div>
-    <div>
-        <input type="radio" id="4" name="option" class="user-option">
-        <label for="4">🦎</label>
-    </div>
-    <div>
-        <input type="radio" id="5" name="option" class="user-option">
-        <label for="5">🖖</label>
-    </div>
-   </section>
-   <div class="content"> 
-    <span>Computer choice</span>
 
-    <div id="computer-choice">😈</div>
-
-    <button id="play">Play</button>
-
-    <div id="output"></div>
-   </div>
-
-
- <section>
-     <button class="rules"><img
-    src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png"
-    alt="Rock, Paper, Scissors, Lizard, Spock" />Rules</button>
-</section>
+    <section>
+        <button class="rules"><img
+                src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png"
+                alt="Rock, Paper, Scissors, Lizard, Spock" />Rules</button>
+                <button id="close">close</button>
+    </section>
     <script src="assets/js/scripts.js"></script>
-    
+
 </body>
+
 </html>
