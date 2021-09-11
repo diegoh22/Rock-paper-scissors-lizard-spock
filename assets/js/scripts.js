@@ -1,17 +1,24 @@
 function getComputerChoice() {
     return Math.floor((Math.random() * 5) + 1);
 }
+
 function _Updatescore(value) {
     score += value;
-    
-   scoreEl.innerText = score;
-   
+
+    scoreEl.innerText = score;
+
 
 
 }
+
 function _CupdateScore(value) {
     cscore += value;
     cscoreEl.innerText = cscore;
+}
+function endGame(value) {
+    start += value;
+    startEl.innerText = start;
+
 }
 
 let score = 0;
@@ -40,6 +47,7 @@ const OPTIONS2EMOJI = {
 
 const scoreEl = document.getElementById('score');
 const cscoreEl = document.getElementById('cscore')
+const startEl = document.getElementById('start')
 
 let userChoiceID = '';
 
@@ -50,7 +58,7 @@ window.onload = () => {
         userChoiceID = event.target.id;
     }));
 
-    
+
 
     const playButton = document.querySelector('#play');
 
@@ -60,7 +68,7 @@ window.onload = () => {
         const computerChoiceElement = document.querySelector('#computer-choice');
         const output = document.querySelector('#output');
         const userChoice = OPTIONS[userChoiceID];
-        
+
 
 
         let result = '';
@@ -89,7 +97,7 @@ window.onload = () => {
             case `${LIZARD}-${SPOCK}`:
                 result = '😔💔 🤖🥇'
 
-                _CupdateScore(+ 1);
+                _CupdateScore(+1);
 
                 break;
             case `${ROCK}-${PAPER}`:
@@ -102,22 +110,23 @@ window.onload = () => {
             case `${SPOCK}-${LIZARD}`:
             case `${LIZARD}-${ROCK}`:
             case `${LIZARD}-${SCISSORS}`:
-                
+
                 result = ' 😁🥇 🤖💔'
 
-                _Updatescore(+ 1)
+                _Updatescore(+1)
 
                 break;
+
+
             default:
                 result = 'SOMETHING WRONG. TRY AGAIN. 💀'
-                
-                
+    
+
         }
-        
+
 
         output.innerHTML = result;
     })
 
-  
 
 }
