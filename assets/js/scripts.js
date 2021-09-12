@@ -1,10 +1,11 @@
+/*WHOLE GAME FUNTIONS*/
+
 function getComputerChoice() {
     return Math.floor((Math.random() * 5) + 1);
 }
 
 function _Updatescore(value) {
     score += value;
-
     scoreEl.innerText = score;
 
 
@@ -20,22 +21,28 @@ function _CupdateScore(value) {
   function checkScores() {
     const cscore = document.getElementById('cscore').innerText;
     const score = document.getElementById('score').innerText;
-    if (cscore == 5 || score == 5) {
+
+    if (cscore == 5) {
+
+        alert("COMPUTER SCORE IS 5 YOUR SCORE IS " + score + " THE COMPUTER IS THE WINNER!!");
        
 
-        showGameOverModal()
+        location.reload();
         
     }
-    console.log(cscore);
-    console.log(score);
+    if (score == 5){
+
+        alert("YOUR SCORE IS 5 THE COMPUTER IS " + cscore + " YOU ARE THE WINNES!!");
+
+        location.reload();
+    }
 }
-
-
-
+ 
+ /*SCORE*/
 let score = 0;
 let cscore = 0;
 
-
+/*OPTIONS TO PICK*/
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
@@ -59,6 +66,7 @@ const OPTIONS2EMOJI = {
 const scoreEl = document.getElementById('score');
 const cscoreEl = document.getElementById('cscore')
 
+/*GAME LOGIC*/
 
 let userChoiceID = '';
 
@@ -68,6 +76,8 @@ window.onload = () => {
     userOptions.forEach(el => el.addEventListener('click', event => {
         userChoiceID = event.target.id;
     }));
+
+    /*PLAY BUTTON AND EVENT LISTENER*/
 
 
 
@@ -81,10 +91,9 @@ window.onload = () => {
         const userChoice = OPTIONS[userChoiceID];
         
 
-
-
-
         let result = '';
+
+        /*COMPUTER AND USER WINNIG OR LOOSING*/
         
 
         computerChoiceElement.innerHTML = OPTIONS2EMOJI[computerChoiceID];
@@ -109,7 +118,7 @@ window.onload = () => {
             case `${SPOCK}-${SCISSORS}`:
             case `${LIZARD}-${PAPER}`:
             case `${LIZARD}-${SPOCK}`:
-                result = '😔💔 🤖🥇'
+                result = 'COMPUTER WINS THIS ROUND😔💔 🤖🥇'
 
                 _CupdateScore(+1);
                 checkScores(cscore)
@@ -127,7 +136,7 @@ window.onload = () => {
             case `${LIZARD}-${ROCK}`:
             case `${LIZARD}-${SCISSORS}`:
 
-                result = ' 😁🥇 🤖💔'
+                result = 'YOU WIN THIS ROUND 😁🥇 🤖💔'
 
                 _Updatescore(+1)
                 checkScores(score)
@@ -145,6 +154,5 @@ window.onload = () => {
         output.innerHTML = result;
         
     })
-
-
+   
 }
