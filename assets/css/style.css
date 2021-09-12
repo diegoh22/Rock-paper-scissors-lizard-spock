@@ -327,6 +327,7 @@ img {
             }
             
 }
+/* medium devices*/
 
 @media screen and (max-width: 550px) {
 
@@ -450,6 +451,7 @@ img {
     }
 
 }
+/* 1200 max px*/
 @media screen and (max-width: 1200px) {
     
 
@@ -571,7 +573,7 @@ img {
     }
     
 }
-
+/* small devices*/
 @media screen and (max-width: 290px){
 
    body{
@@ -702,6 +704,8 @@ img {
 }
 
 }
+
+/* small devices*/
 @media screen and (max-width: 125px){
 
     body{
