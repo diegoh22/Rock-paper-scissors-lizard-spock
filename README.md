@@ -1,5 +1,6 @@
-## Rock-Paper Game.
 
+## Rock-Paper Game.
+![Screenshot 2021-09-12 145158](https://user-images.githubusercontent.com/83575427/132991660-8d7b1f03-8d0e-46d7-b766-1862106e0fd3.png)
 
 The image is from Am I responsive?
 
@@ -36,7 +37,8 @@ The image is from Am I responsive?
 - The game is a single page with al the necesary fictures for you to have fun and enjoying a fasts games.
 
 # Wireframe Mockups:
-- Home
+- ![Screenshot 2021-09-12 153229](https://user-images.githubusercontent.com/83575427/132991728-93e32a00-6655-4f08-88eb-53efe599c51f.png)
+
 
 
 # Home
@@ -85,13 +87,14 @@ The image is from Am I responsive?
 ## Code validation
 
 - I used W3C CSS validation and W3C Markup Validation to check the validity of the website code.
+![Screenshot 2021-09-12 125555](https://user-images.githubusercontent.com/83575427/132991737-6cd3122a-c114-4995-9e1d-febbc1a7a767.png)
 
 - No issues with validato
 
+![Screenshot 2021-09-12 144921](https://user-images.githubusercontent.com/83575427/132991759-e176b288-dd99-4d2a-bd02-d2e58e9a7c2a.png)
 
 
 - No errors  W3C CSS validation.
-
 
 
 @ COMPATIBILITY
