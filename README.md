@@ -1,108 +1,193 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+The image is from Am I responsive?
 
-Welcome diegoh22,
+This is a 4 different pages website, is mainly focus to Word of Wardcraft playes and the guild members, The website features, 'Guild history', ‘Videos about raids’, ‘Classes guides’, ‘Raid progresion’, ‘Raids time table’, 'Main roster presentation' ‘Registation access’ and 'social media for members'. The objective of this projects is to help and assist guild members and to welcome new guild members.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The website is to help guild members with guides and videos to progress with in the game content and recluitment, having all the information and tools in the samen website, will give to the member a fast access to a high end content, so they can enjoy the game instead of searching for information else where.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The goals of this website are:
 
-## Gitpod Reminders
+presentation for new members.
+Help the members with the progression.
+Having a single place to find all the information they need.
+Save time and searching to different website to find all the information and tools require.
+The members visit this website to:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+To gather all the information and knowlegd to be able to progress without stress.
+having the time to understand every class and boss encounter.
+knowing about our history.
+recluit new members.
+UX
+My idea with this website is to make visually very atractive and funcional, the navigation is very eye catching with a nice touch color contrast and images background. also have a good presentation of who they are as a guild, and very much focus on the game content, went you navigate the website you feel that you still in the game.
 
-`python3 -m http.server`
+Ideal Users
+The ideal Users for this site is:
 
-A blue button should appear to click: _Make Public_,
+English speaking.
+In love with gaming.
+A bit of Word of Wardcraft knowledge.
+Someone that wants to be better at the game.
+The project help users to:
 
-Another blue button should appear to click: _Open Browser_.
+Navigate easy throughout the whole site with out loosing track of anything
+get knowlegd about guild, members, raids, raid bosses, classes guides and the available spots on the raid.
+User stories:
+As a new user the contrast with the black and yellow color is really nice, make you feel like you are inside of a Hive full of bees.
+the images on the header and body are epic, Home, raid and raider, have a different image related to the content.
+The links to a guides with diffent website and classes logos are brilliant.
+videos are a nice touch as the guild always are looking for videos of how to kill bosses and having all toguether is a great idea.
+Scope
+To achieve the strategic goals, I included the following features in the website:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Header containing Guild logo and the menu bar including Home, Guides,Raid and raiders, and Contact us.
+Home page which say about the guild server and facition they represent.
+guild history where they come from and who they are.
+Guides have videos with boss encounter that you can watch as you go or open in a different tap and Class clickeable icon conected to external website with information about each Class.
+Raid and Raiders have a clickeable letter{ Normal, Heroic, Mythic} that have access to the guild progresion, also raid schedule time for the raid and a presentantion clickeable icons with raiders information.
+Contact us have a recluitment page with a Email submit, that they will use to contact in case they need you.
+Footer containing the sing in button, and links to discord and a copyright text.
+Skeleton
+The website consists of four separate pages; Home (introduces to the guild history, server and faction), Guides (show videos guides to boss encounter and navigation links for each class of the game), Raid and Raiders (Have progetion and times for the raid, and a presentation of the raid members with links conected to they character information) contact us (a recluitment page that have a submit Email).
 
-A blue button should appear to click: _Make Public_,
+Wireframe Mockups:
+Home
+Guide
+Raid and Raiders
+Contact Us
+Surface
+The logo is place to the left to have a better vision of it, the navigation bar are place to the right to have better feeling on navigation and a clear idea of where to focus your atention. the color contrast yellow and black is giving the impresion of a honey bee making the name and brand very atractive, the images are mainly focus on the game most popular characteres at this time. Is have a nice soft hover (aqua) color to make the website more about the content and little details also it doent kill the idea behing of the honey bee. the font family I use make the fonts getting out of the desing as call very much the atention, as they are very easy to read.
 
-Another blue button should appear to click: _Open Browser_.
+Features
+Header
+The website consists of four pages; Home, Guide, Raid and Raiders, contact us. The header contains a logo and navigation bar on the right of the page. This will create consistency throughout the page and the user can access the information via the navigation bar and move around the site. The links will remain active when in use.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Footer
+Every page has a footer with the social media icon and copyright information. The social media icon is linked to the Discord.
 
-To log into the Heroku toolbelt CLI:
+Home
+The Home page wellcome you with image of the raid boss to give to the user a game feeling. there is some information about the guild to make the users feel connected to the brand. At the bottom of the page you have access to the social media.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Guide
+The Guide page have a 2 separate section one with videos and the second one with images, features videos in 5 column and images in 2 columns wide for laptop and desktop devices, 2 for iPads and 2, 1 column wide for mobile devices. Each video can be clicked to open a fancybox window to view further videos/details of each boss encounter, the images also are clickeable and give you a access to a new tap for futher information about the class. At the bottom of the page you have access to the social media.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Raid and Raiders
+The Raid and Raiders page have 2 separate section one with clickeable fonts to access to the raid progression and the second one with the presentation of the main roster. features images in 2 columns wide for laptop and desktop devices, 1 for iPads and , 1 column wide for mobile devices. Each images also are clickable and give you a access to a new tap for futher information about the Raiders. At the bottom of the page you have access to the social media.
 
-------
+Contact us
+The contact us page is focus on recruitment for the raid and guild, it have a really nice text exolaining what we need and how to apply, also it have a email requistation button.
 
-## Release History
+Existing Features
+Header Logo – Exists on every page aiming to promote brand awareness. Clicking on the logo will return the users to the Home page as they expect.
+Header Navigation Bar – Exists on every page to allow users to navigate the website and move from one page to another for access to more information.
+Home Page – Is a short introduction of the Guild, a history about the guild creation and the officials and guild Master.
+Guide – It giving the user videos for boss encounters and images for each class guide, Each videos are clicked to open a fancybox window to view further and image is clickable and can be viewed in a new page.
+Fancybox Viewer – Allows to view the boss encounters in more details. It opens in the videos in a bigger scale and users can move to the next of previous video and/or close them to return to the website.
+Footer – Exists on every page and contains copyright to protect the content of the website; the social media and icons which link the discord media platform; and a sing in button.
+The about us - Exists to give the use a presentation of the guild and the history of it.
+Raid and raiders - Exits to give to the user a information about the raid progress, time table and raiders information.
+Contact us - Exists for recluitment information and process.
+Features to Implement in future
+Due to lack of information and time:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Add more social media icons like, Youtube, Twitch, as the guild doens't corrently have those social media.
+Upload button to be able to upload temporaly information and videos and audio.
+Add a Download button to be able to Download videos and information.
+background music to be able to listlen while you are navigating.
+Option to choose languages.
+Guild pictureas and videos killing bosses.
+dropdown button with addons links.
+Technologies Used
+This project uses HTML and CSS programming languages.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Balsamiq I used Balsamiq, the rapid low-fidelity UI wireframing tool to sketch the structure of the website layout and its pages following best UX practices.
+Gitpod- The developer used Gitpod to write the code to builds the website.
+GitHub - The project used GitHub to host my code that was created and pushed from GitPod.
+Bootstarp5 - The project uses Bootstrap5 (BootstrapCDN and components) to simplify the structure of the website and make the website responsive across various platforms.
+FontAwesome - The projects uses a few icons from FontAwesome to make the websites less wordy and more visually appealing.
+Fancybox The project uses Fancybox for a gallery modal popup to slideshow gallery images.
+jQuery The project used jQuery to supply to JavaScript linked needed to the Fancybox gallery.
+Google Fonts The project uses Google fonts to style the website fonts.
+Tiny-PNG I used tinypng for big images up to 5M needed to be compressed to improve the website's loading time.
+CompressJPEG The big images bigger than 5M needed to be compressed to improve the website's loading time.
+Webaim.org The Webaim was used to test colour contrast on the project.
+W3C Markup Validation Service The W3C Markup Validation Service checked the markup validity of Web documents in HTML.
+W3C CSS Validation Service W3C CSS Validation Service was used to check the validity of my CSS in the project.
+WAVE Web Accessibility Evaluation ToolI used WAVE to make my site more accessible to individuals with disabilities by detecting any potential issues.
+Testing
+Testing client stories from UX section of README.md
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+As a new visitor, I want to easily navigate the site to find whether the designer the right fit for my needs.
+The user can navigate through the website using the navbar on top of the page. menu
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The logo links the user back to the Home Page.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The Home Page provide more information about the guild creation to the users.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Code validation
+I used W3C CSS validation and W3C Markup Validation to check the validity of the website code.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Several issues were identified on W3C Markup Validation.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+After I rectified the issue, no further errors were picked.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Erros on fancybox CSS code by W3C CSS validation.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Color Contrast
+The initial color: ##81b214; had Contrast Ratio of 2.52:1 with the white background. So I changed it to a darker green. The Color Contrast Accessibility Validator was used to test for colour contrast on the project.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+COMPATIBILITY
+To ensure a broad range of users can successfully view/use the site, I tested it across all major browsers in both desktop and mobile configuration.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Chrome
+Edge
+Firefox
+Safari
+Internet Explorer
+Issues
+The link on Internet Explorer does not recognise font-antonio. It displays the web using San-sarif.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Further testing
+I asked my friends and family to click on the deployed link on their devices especially iPads and 17" and bigger laptops which I do not personally own. I added further bootstrap padding and margin and CSS media queries to make the website responsive on all devices.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Deployment
+This project was developed using Gitpod, committed to git and pushed to GitHub using git commands.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
-------
+Log into GitHub.
+From the list of repositories on the screen, select saranamdarian.
+From the menu items near the top of the page, select Settings.
+Scroll down to the GitHub Pages section.
+Under Source click the drop-down menu labelled None and select Master Branch. Then Save it.
+Wait for a few minutes of the website to be deployed.
+Scroll back down to the GitHub Pages section to access the link to the deployed website.
+Run this project locally
+Select the Repository from the GitHub Dashboard.
+Click the green button labelled 'Code'.
+Click 'Download ZIP'.
+Extract ZIP file on your computer.
+Open folder and open index.html in web browser.
+Clone this project
+Select the Repository from the GitHub Dashboard.
+Click the green button labelled 'Code'.
+To clone the repository using: -- HTTPS: under "Clone with HTTPS", click checklist icon. -- SSH: click Use SSH, then click checklist icon.
+Open Git Bash.
+Change the current working directory to the location where you want the cloned directory.
+Type 'git clone', and then paste the URL you copied earlier.
+Press Enter to create your local clone.
+Credits
+Content
+The texts for all the pages have been created by the the Owner and guild Master.
 
-## FAQ about the uptime script
+Media
+The images were obtained from the designer – Diego Hernandez.
+all images are obtaine from Google Images.
+Testimonial logos are from Google Images.
+Code
+CSS code for shadows and hover responsiveness of gallery images and ptoject timeline boxes was originally taken from Code institute and W3s
+Acknowledgement
+I decided to develop this website for a group of friend and member of the guild The Hive mind / {Spanish La mente colmena}>
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+https://www.w3schools.com/
 
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+I would like to also thank jo_ci, a great tutor at Code Institute, who helped me with GitPod.
